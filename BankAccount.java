@@ -65,13 +65,17 @@ public class BankAccount {
         return balance;
     }
 
+    protected void setAccountBalance(double balance) {
+        this.balance = balance;
+    }
+
     //ACCOUNT SUMMARY
 
     public void accountSummary() {
-        System.out.println("Account Summery");
+        System.out.println("Account Summary");
         System.out.println("First Name: " + firstName);
         System.out.println("Last Name: " + lastName);
         System.out.println("Account ID: " + accountID);
-        System.out.println("Balance: $" + balance);
+        System.out.printf("Balance: $%.2f%n", balance);
     }
 }
